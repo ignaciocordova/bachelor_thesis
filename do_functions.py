@@ -13,6 +13,7 @@ from sklearn.metrics import auc
 
 
 
+
 def read_and_merge(document1,document2):
 	""" Reads documents 1 and 2 and merges 
 		dataframes based on roid 
@@ -214,8 +215,10 @@ def plotPrecisionRecall(df,hi,hf,percentile):
 
 
 	#and plot them
-	plt.plot(precision, recall, marker='.', label=str(hi)+'km -'+str(hf)+'km'+'; percentile='+str(round(percentile*100,3)))
-	plt.plot(precision[i], recall[i], color='red', marker='o',linewidth=2, markersize=7)
+	plt.scatter(precision, recall, 
+				label=str(hi)+'km -'+str(hf)+'km'+'; percentile='+str(round(percentile*100,3)),
+				s=1)
+	plt.plot(precision[i], recall[i], color='red', marker='o', markersize=7)
 	plt.legend(bbox_to_anchor =(1.0, 1.0))
 
 	return 
@@ -258,4 +261,52 @@ def getF1score(df,hi,hf,percentile):
 	#the function returns a list with the results 
 	return [hi,hf,truth_th,thresholds[i]*df_avg['avg'+str1+''+str2].max(),f1_scores[i]]
 
+
+
+def getPrecisionRecall(df,hi,hf,percentile):
+
+	df_avg = do.average(df,hi,hf)
+	# 2 columns: precipBelow12 and avg have the same length
+
+	# if hf<hi don't bother
+	if hf<=hi:
+		return
+
+	#convert float inputs to string to find labels in dataframe
+	str1 = 'h'+str(int(hi*10)).zfill(3)
+	str2 = 'h'+str(int(hf*10)).zfill(3)
+
+	#build numpy array with normalized averages (there are negative values!)
+	probs = (df_avg['avg'+str1+''+str2]/df_avg['avg'+str1+''+str2].max()).to_numpy()
+
+	#Build boolean Truth array with True above percentile 
+	#the percentile ignores 0 values  
+	auxiliary_df = df_avg[df_avg['precipBelow12']>0]
+	truth_th = auxiliary_df['precipBelow12'].quantile(percentile)
+	truth = (df_avg['precipBelow12']>truth_th).to_numpy()
+
+	# calculate precision and recall curve
+	precision, recall, thresholds = precision_recall_curve(truth, probs)
+
+
+	#the optima threshold based on greater F1 SCORE 
+	f1_scores = (2.0*precision*recall)/(precision+recall)
+	i = np.nanargmax(f1_scores)
+
+	if np.isnan(f1_scores[i])==True:
+		print('The avg_dphi',str1,'-',str2,' has NO SKILL')
+		print('')
+
+
+	else: 
+		#averaged dphi is normalized so we must multiply by avg.max()
+		print('For the avg_dphi',str1,'-',str2,':')
+		print('Optimal threshold: =',round(thresholds[i]*df_avg['avg'+str1+''+str2].max(),2))
+		print('F1score:',round(f1_scores[i],3))
+		print('')
+
+
+	label=str(hi)+'km -'+str(hf)+'km'+'; percentile='+str(round(percentile*100,3))
+
+	return precision,recall,precision[i], recall[i],truth,label
 
