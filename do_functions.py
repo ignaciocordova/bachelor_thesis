@@ -30,7 +30,6 @@ def clean_dataframe(df):
 	df = df.drop(df[df.meanP_2 < 0.0].index)
 	df = df.drop(df[df.precipBelow12 < 0.0].index)
 
-<<<<<<< HEAD
 	#Make the values of hxxx below height_flag_comb Nan
 	#values = df.loc[:,'h001':'h400'].to_numpy()
 	#flag = df.loc[:,'height_flag_comb'].to_numpy()
@@ -40,8 +39,6 @@ def clean_dataframe(df):
 	
 	#df.loc[:,'h001':'h400'] = pd.DataFrame(values)
 
-=======
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 	return df 
 
 def plot_profile(df,roid):
@@ -51,11 +48,8 @@ def plot_profile(df,roid):
 	Output: just displays a plot 
 	"""
 	df.loc[df['roid']==roid].iloc[0,10:].plot()
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 	plt.xlabel('Height')
 	plt.ylabel('Δɸ')
 	plt.show()
@@ -123,20 +117,13 @@ def average(dfin,hi,hf):
 	########Data cleaning########
 	#If NaN values are more than 20%, converts the whole row to NaN
 	df2.loc[df2.isna().sum(axis=1) > len(df2.columns)/5, :] = np.nan
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 	# writes the calculated average for each measure
 	result = pd.DataFrame()
 	result['avg'+str1+''+str2] = df2.mean(axis=1)
 	result['precipBelow12'] = dfin['precipBelow12'].copy()
-<<<<<<< HEAD
 	result[result['avg'+str1+''+str2] < 0.0] = 0.
 	
-=======
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 
 	#drops averages that have outputted NaN 
 	#this way precipBelow12 and avg have the same length 
@@ -145,11 +132,7 @@ def average(dfin,hi,hf):
 	return result
 
 
-<<<<<<< HEAD
 def plotROC(df,hi,hf,percentile):
-=======
-def plotROC(df,hi,hf,truth_th):
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 
 	df_avg = do.average(df,hi,hf)
 	# 2 columns: precipBelow12 and avg have the same length
@@ -165,16 +148,11 @@ def plotROC(df,hi,hf,truth_th):
 	#build numpy array with normalized averages (there are negative values!)
 	probs = (df_avg['avg'+str1+''+str2]/df_avg['avg'+str1+''+str2].max()).to_numpy()
 
-<<<<<<< HEAD
 	#Build boolean Truth array with True above percentile 
 	#the percentile ignores 0 values  
 	auxiliary_df = df_avg[df_avg['precipBelow12']>0]
 	truth_th = auxiliary_df['precipBelow12'].quantile(percentile)
 	truth = (df_avg['precipBelow12']>truth_th).to_numpy()
-=======
-	#Build boolean Truth array using truth threshold 
-	truth = (df_avg['precipBelow12']/df_avg['precipBelow12'].max()>truth_th).to_numpy()
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 
 	#Calculate ROC curves fpr = false positive rate ; tpr = true positives rate 
 	fpr, tpr, _ = roc_curve(truth, probs)
@@ -185,20 +163,11 @@ def plotROC(df,hi,hf,truth_th):
 
 	#and plot them 
 	plt.plot(ns_fpr, ns_tpr, linestyle='--',c='gray')
-<<<<<<< HEAD
 	plt.plot(fpr, tpr, marker='.', label=str(hi)+'km -'+str(hf)+'km'+'; percentile='+str(round(percentile*100,3)))
 	plt.legend(bbox_to_anchor =(1.0, 1.0))
 	return
 
 def plotPrecisionRecall(df,hi,hf,percentile):
-=======
-	plt.plot(fpr, tpr, marker='.', label=str(hi)+'km -'+str(hf)+'km')
-	plt.title('ROC curve for precipitation threshold of '+str(round(truth_th*df_avg['precipBelow12'].max(), 2)))
-	plt.legend(bbox_to_anchor =(1.0, 1.0))
-	return
-
-def plotPrecisionRecall(df,hi,hf,truth_th):
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 
 	df_avg = do.average(df,hi,hf)
 	# 2 columns: precipBelow12 and avg have the same length
@@ -214,16 +183,11 @@ def plotPrecisionRecall(df,hi,hf,truth_th):
 	#build numpy array with normalized averages (there are negative values!)
 	probs = (df_avg['avg'+str1+''+str2]/df_avg['avg'+str1+''+str2].max()).to_numpy()
 
-<<<<<<< HEAD
 	#Build boolean Truth array with True above percentile 
 	#the percentile ignores 0 values  
 	auxiliary_df = df_avg[df_avg['precipBelow12']>0]
 	truth_th = auxiliary_df['precipBelow12'].quantile(percentile)
 	truth = (df_avg['precipBelow12']>truth_th).to_numpy()
-=======
-	#Build boolean Truth array with threshold 
-	truth = (df_avg['precipBelow12']/df_avg['precipBelow12'].max()>truth_th).to_numpy()
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 
 	# calculate precision and recall curve
 	precision, recall, thresholds = precision_recall_curve(truth, probs)
@@ -234,11 +198,7 @@ def plotPrecisionRecall(df,hi,hf,truth_th):
 
 	#the optima threshold based on greater F1 SCORE 
 	f1_scores = (2.0*precision*recall)/(precision+recall)
-<<<<<<< HEAD
 	i = np.nanargmax(f1_scores)
-=======
-	i = np.argmax(f1_scores)
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 
 	if np.isnan(f1_scores[i])==True:
 		print('The avg_dphi',str1,'-',str2,' has NO SKILL')
@@ -254,29 +214,18 @@ def plotPrecisionRecall(df,hi,hf,truth_th):
 
 
 	#and plot them
-<<<<<<< HEAD
 	plt.plot(precision, recall, marker='.', label=str(hi)+'km -'+str(hf)+'km'+'; percentile='+str(round(percentile*100,3)))
 	plt.plot(precision[i], recall[i], color='red', marker='o',linewidth=2, markersize=7)
-=======
-	plt.plot(precision, recall, marker='.', label=str(hi)+'km -'+str(hf)+'km')
-	plt.plot(precision[i], recall[i], color='red', marker='o',linewidth=2, markersize=7)
-	plt.title('Precision-Recall curve for precipitation threshold of '+str(round(truth_th*df_avg['precipBelow12'].max(), 2)))
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 	plt.legend(bbox_to_anchor =(1.0, 1.0))
 
 	return 
 
 
-<<<<<<< HEAD
 
 
 
 def getF1score(df,hi,hf,percentile):
 	#the function returns a list with the results 
-=======
-def getF1score(df,hi,hf,truth_th):
-	#the function returns optimal th and F1 score of optimal th
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 
 	df_avg = do.average(df,hi,hf)
 	# 2 columns: precipBelow12 and avg have the same length
@@ -292,22 +241,16 @@ def getF1score(df,hi,hf,truth_th):
 	#build numpy array with normalized averages (there are negative values!)
 	probs = (df_avg['avg'+str1+''+str2]/df_avg['avg'+str1+''+str2].max()).to_numpy()
 
-<<<<<<< HEAD
 	#Build boolean Truth array with True above percentile 
 	#the percentile ignores 0 values  
 	auxiliary_df = df_avg[df_avg['precipBelow12']>0]
 	truth_th = auxiliary_df['precipBelow12'].quantile(percentile)
 	truth = (df_avg['precipBelow12']>truth_th).to_numpy()
-=======
-	#Build boolean Truth array with threshold 
-	truth = (df_avg['precipBelow12']/df_avg['precipBelow12'].max()>truth_th).to_numpy()
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
 
 	# calculate precision and recall curve
 	precision, recall, thresholds = precision_recall_curve(truth, probs)
 
 	#the optima threshold based on greater F1 SCORE 
-<<<<<<< HEAD
 	f1_scores = (2.0*precision*recall)/(precision+recall)
 	i = np.nanargmax(f1_scores)
 	
@@ -316,9 +259,3 @@ def getF1score(df,hi,hf,truth_th):
 	return [hi,hf,truth_th,thresholds[i]*df_avg['avg'+str1+''+str2].max(),f1_scores[i]]
 
 
-=======
-	f1 = f1_score(truth, probs)
-
-	#the function returns optimal th and F1 score of optimal th
-	return hi,hf,truth_th,thresholds[i]*df_avg['avg'+str1+''+str2].max(),f1
->>>>>>> 5b72414f9dab1f787a6c68efb2e642a2d1419cf4
