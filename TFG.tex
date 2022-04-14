@@ -41,16 +41,9 @@
 \date{\today}
 
 \begin{abstract}
-{\bf Abstract:}A Global Navigation Satellite System (GNSS) radio 
-occultation (RO) experiment is taking place in the Spanish 
-low Earth orbiter for Earth Observation PAZ. The RO payload provides
-globally distributed vertical thermodynamic profiles of 
-the atmosphere suitable to be assimilated into weather numerical 
-prediction models. Moreover, the mission runs, for the first
-time, a double-polarization GNSS RO experiment to assess the capabilities
- of polarimetric GNSS RO for sensing heavy rain events. 
-This paper introduces introduces the application of statistical
-models to determine the performance of the measured variable $\Delta \phi$
+{\bf Abstract:}
+This paper introduces the application of statistical models 
+to determine the performance of the observable $\Delta \phi$
 as a precipitation estimator. Using Precision Recall curves, the 
 study shows the optimal range of heights for transforming the vertical 
 profiles of $\Delta\phi$ into a scalar average. The results show 
@@ -66,76 +59,92 @@ of 0.54 when averaged between 0.1km and 8.5km.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
-In this document you will find the structure as well as the length
-of what the {\it Treball Fi de Grau} (TFG) report is
-required to have. It uses
-\LaTeX\ in a two-column format and provides an example of what the essay
-ought to look like, including lists, tables and figures.
 
-The text has to be written in (good) English (compulsory).
-The length of the report should by no means exceed {\bf five} pages in the
-present format,
-all figures, tables, etc..., included. It is important that the
-two requirements are precisely met. Otherwise the essay will not be
-considered for evaluation, and will automatically fail with
-a mark of {\it Susp\`es}.
+A Global Navigation Satellite System (GNSS) radio 
+occultation (RO) experiment is taking place in the Spanish 
+low Earth orbiter PAZ satellite. The RO payload provides
+globally distributed vertical profiles of 
+the atmosphere which have been proven to have a high impact on Numerical Weather
+Prediction Models[Cardellach]. Moreover, the mission runs for the first
+time a double-polarization GNSS RO experiment for detecting precipitation
+events. The performance of this new technique, which has already been 
+proven to be succesfull, is evaluated in this paper.
 
-The report must consist of the following parts:
-\begin{enumerate}
-\item Abstract.
-\item Introduction.
-\item Development sections.
-\item Conclusions.
-\item Appendix (Optional)
-\item Bibliography.
-\end{enumerate}
+The GNSS systems transmit circular-polarized signals that are collected 
+using ROs after having travelled through the atmosphere. 
+They are collected using two orthogonal linearly polarized antennas 
+(horizontal H and vertical V) with the aim of comparing the phase
+delay $\phi_H$ and $\phi_V$. In the case of heavy rain events,
+water drops experience
+air friction which causes them to flatten out along their horizontal 
+dimension. The pressence of water drops can cause depolarization
+between the H and V signals which are affected differently when 
+propagating through a rainy atmosphere. The polarimetric radio occultations (PROs) is a 
+new technique that allows us to measure the differential phase shift $\Delta \phi$
+between the H and V signals. One of the objectives of 
+the ROHP-PAZ mission is to use the measured depolarization $\Delta \phi$ 
+as a precipitation estimator.
 
+This paper evaluates the performance of $\Delta \phi$  on 
+detecting precipitation events. To properly evaluate the performance 
+of any prediction, a target must be defined. The target used in this paper
+is the NASA's IMERG precipitation dataset. From this dataset we can obtain 
+the precipitation in mm/h at every location in time and space where a 
+PRO took place. The goal is to evaluate and quantify how well does 
+the $\Delta \phi$ estimator perform in detecting precipitation above a certain
+threshold regarded as {\it true precipitation}. This way, our target 
+is defined as a binary True/False variable being True for precipitation
+above the elected threshold and False for precipitation below it. 
 
-The final score will combine both the
-advisor and the jury marks.
-The defense will consist of a 15 minute public presentation before
-a jury composed by two members. The deadlines as well as the dates for the
-presentations will be announced in due time.
-The students are encouraged to stick to the allowed allotted time (15 minutes),
-since no extra time will, in general, be conceded by the jury members.
-%no running overtime in the presentation.
-At any rate,
-it should be clear that a list of conclusions needs to be read
-before the presentation is over.
+Our array-like observable is of little use to the Numerical Weather
+Prediction Models. This study provides the optimal range of heights 
+$[h_o, h_f]$ for transforming the vertical profiles of $\Delta\phi$ into a scalar 
+average. This optimal range depends on the threshold used to define 
+our {\it true precipitation} and, as found in this study, on the location of the PRO. The performance
+of each average $[h_o, h_f]$ is evaluated using Precision-Recall curves. 
+Precision-Recall curves have been proven to work well with unbalanced 
+datasets [reference] and in our case, the target False (no precipitation event)
+will outnumber the target True once a proper truth threshold is defined. 
 
-The evaluation will follow the {\it R\'ubriques} (or {\it Taules
-d'avaluaci\'o}) provided by the TFG Advisory Commitee,
-which will be available to
-the students prior to the presentation date, well ahead of time. It is
-highly advisable for the students to read them thorough and carefully,
-in order to become aware of all the competences that need be assessed
-to comply with the guidelines of Bologna.
-
-Make sure that the presentation will include:
-\begin{enumerate}
-\item Introduction.
-\item Development sections.
-%\item Summary (optional).
-\item Conclusions.
-\end{enumerate}
-
-You can find all the information concerning the TFG process in,
-\begin{verbatim}
-https://www.ub.edu/portal/web/fisica/tramit-tfg
-\end{verbatim}
+It is expected that the average $[h_o, h_f]$ that best predicts the 
+True/False target will be somewhere between 0.1km and 10.0km since that 
+is where the signal will experiment the most depolarization. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Equations: a few examples}
-Let us write a few equations,
+\section{Data}
+
+The data collected by the PAZ satellite are downlinked by Hisdesat.
+The Institut de Ciències de l'Espai (ICE), Consejo Superior de Investigaciones
+Científicas, Institut d'Estudis Espacials de Catalunya (CSIC, IEEC) collects 
+and owns the data and provides access to the servers at the Jet Propulsion 
+Laboratory (JPL). At the JPL, the raw data are processed and converted to 
+level 1 RO products, which are finally analyzed.
+
+The main observable of the experiment is the differential phase shift
 \begin{equation}
-\Delta =\sum_{i=1}^N w_i (x_i - \bar{x})^2,
+    \Delta \phi =\phi_H - \phi_V,
 \label{eq:1}
 \end{equation}
-with a label so that we can refer to it later. For instance you can refer
-to it as Eq. (\ref{eq:1}).
-All equations must be numbered.
-If needed, you can also produce unnumbered equations.
-\begin{equation}
+The dataset is composed of over 85.000 measurements distributed globally 
+providing vertical profiles of $\Delta\phi$  in 100m intervals between
+0.1km and 40km. A {\it true precipitation} is associated with each of 
+these measurements. As an example, 1 measurement is shown below: 
+
+\begin{table}[h!]
+    \label{tab:sample1}
+    \vspace*{2mm}
+    \begin{tabular}{|l|l|l|l|l|l|}
+    \hline
+    (Lat,Lon) (°) & Truth (mm/h) &  $\Delta\phi_{0.1km}$  &  $\Delta\phi_{0.2km}$  & ... &  $\Delta\phi_{40.0km}$  \\
+    \hline
+    (-45.43, 84.52) & 1.126 & 2.89mm & 3.11mm & ... & 0.356mm  \\
+
+    \hline
+    \end{tabular}
+    \caption{Measurement at Latitude -45.43° and Longitude 84.52° with a target of 1.126mm/h}
+    \end{table}
+
+    \begin{equation}
 T = 2 \pi \sqrt{\frac{l}{g}}. \nonumber
 \end{equation}
 You can insert equations in the text, like $e^{i \pi} +1=0$;

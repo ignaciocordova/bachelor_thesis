@@ -1,15 +1,13 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.4.4)  4 APR 2022 23:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.4.4)  14 APR 2022 23:28
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**./TFG.tex
-(TFG.tex
+**/Users/codefrom0/Documents/final_thesis/TFG.tex
+(/Users/codefrom0/Documents/final_thesis/TFG.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24>
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/r
-evtex4/revtex4.cls
-Document Class: revtex4 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for do
-cumentation)
+L3 programming layer <2022-02-24> (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/revtex4/revtex4.cls
+Document Class: revtex4 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentation)
  Copyright (c) 2001 The American Physical Society.
  mailto:revtex@aps.org
  Licensed under the LPPL:
@@ -31,11 +29,8 @@ ltxgrid: portions licensed from W. E. Baxter (web@superscript.com)
 \pagesofar=\box53
 \footbox=\box54
 \pagegrid@col=\count188
-Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text on
-ly upper/lower case changing (DPC)]. on input line 3682.
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/u
-rl/url.sty
+Class revtex4 Info: Incorporating package {textcase}  [1998/11/12 v0.06 Text only upper/lower case changing (DPC)]. on input line 3682.
+(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -51,9 +46,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \belowcaptionskip=\skip48
 \c@figure=\count196
 \c@table=\count197
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/n
-atbib/natbib.sty
+ (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip49
 \bibsep=\skip50
@@ -62,87 +55,54 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 \widetext@top=\box56
 \widetext@bot=\box57
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/r
-evtex4/revsymb.sty
-Package: revsymb 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documenta
-tion)
+ (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/revtex4/revsymb.sty
+Package: revsymb 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentation)
 LaTeX Info: Redefining \REV@mathfrak on input line 118.
 ))
 
 Class revtex4 Warning: No Society specified, using generic APS style.
 
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/r
-evtex4/aps.rtx
-File: aps.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentatio
-n)
-)
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/r
-evtex4/10pt.rtx
-File: 10pt.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentati
-on)
-)
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/g
-raphics/graphicx.sty
+(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/revtex4/aps.rtx
+File: aps.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentation)
+) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/revtex4/10pt.rtx
+File: 10pt.rtx 2001/08/03 v4.0 (http://publish.aps.org/revtex4/ for documentation)
+) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/g
-raphics/keyval.sty
+ (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks18
-)
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/g
-raphics/graphics.sty
+) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/g
-raphics/trig.sty
+ (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/g
-raphics-cfg/graphics.cfg
+) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/g
-raphics-def/pdftex.def
+ (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen138
 \Gin@req@width=\dimen139
-)
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/g
-raphics/epsfig.sty
+) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/graphics/epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \epsfxsize=\dimen140
 \epsfysize=\dimen141
-)
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/a
-msmath/amsmath.sty
+) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/a
-msmath/amstext.sty
+(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/a
-msmath/amsgen.sty
+ (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen142
-))
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/a
-msmath/amsbsy.sty
+)) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen143
-)
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/a
-msmath/amsopn.sty
+) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
 \inf@bad=\count199
@@ -182,9 +142,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
-)
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/a
-msfonts/amsfonts.sty
+) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -193,11 +151,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 LaTeX Info: Redefining \frak on input line 111.
 LaTeX Info: Redefining \Bbb on input line 113.
-)
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/f
-ancyhdr/fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
-rs
+) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip54
 \f@nch@O@elh=\skip55
 \f@nch@O@erh=\skip56
@@ -208,14 +163,15 @@ rs
 \f@nch@O@olf=\skip61
 \f@nch@O@orf=\skip62
 )
-! Extra \endgroup.
+/Users/codefrom0/Documents/final_thesis/TFG.tex:18: Extra \endgroup.
 \document ->\endgroup 
                       \init@documenthook \set@typesize@hook \normalsize \set...
 l.18 \begin{document}
                      
-? 
+Things are pretty mixed up, but I think the worst is over.
 
-! LaTeX Error: Missing \begin{document}.
+
+/Users/codefrom0/Documents/final_thesis/TFG.tex:18: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -223,11 +179,10 @@ Type  H <return>  for immediate help.
                                                   
 l.18 \begin{document}
                      
-? return
-OK, entering \nonstopmode...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l
-3backend/l3backend-pdftex.def
+(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count277
 \l__pdf_internal_box=\box60
@@ -248,13 +203,10 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
-Class revtex4 Info: Unrecognized LaTeX tabular. Please update this document cla
-ss! (Proceeding with fingers crossed.) on input line 18.
+Class revtex4 Info: Unrecognized LaTeX tabular. Please update this document class! (Proceeding with fingers crossed.) on input line 18.
 Class revtex4 Info: cite was not loaded (OK!) on input line 18.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 18.
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/context
-/base/mkii/supp-pdf.mkii
+ (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count278
 \scratchdimen=\dimen151
@@ -267,125 +219,126 @@ Class revtex4 Info: multicol was not loaded (OK!) on input line 18.
 \MPnumerator=\count282
 \makeMPintoPDFobject=\count283
 \everyMPtoPDFconversion=\toks25
-)
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/e
-pstopdf-pkg/epstopdf-base.sty
+) (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/0
-0miktex/epstopdf-sys.cfg
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
-
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/a
-msfonts/umsa.fd
+LaTeX Font Info:    Trying to load font information for U+msa on input line 46.
+ (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
-
-
-(/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/a
-msfonts/umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 46.
+ (/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-Class revtex4 Warning: Assuming \noaffiliation for Advisor: Dr. Ramon Padull^^c
-3^^a8s.
+Class revtex4 Warning: Assuming \noaffiliation for Advisor: Dr. Ramon Padull^^c3^^a8s.
 
 
-Overfull \hbox (0.74785pt too wide) in paragraph at lines 125--125
-[]\OT1/cmtt/m/n/10 https://www.ub.edu/portal/web/fisica/tramit-tfg[] 
+Overfull \hbox (8.23724pt too wide) in paragraph at lines 136--144
+ []$[]$ 
  []
 
-[1{/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pd
-ftex/pdftex.map}]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[1{/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 154.
+
+
+Package natbib Warning: Citation `jackson' on page 2 undefined on input line 168.
+
+
+Package natbib Warning: Citation `endnote1' on page 2 undefined on input line 175.
+
 \@endnoteout=\write3
 \openout3 = `TFG.end'.
 
-<fig1.pdf, id=21, 612.2875pt x 456.70625pt>
-File: fig1.pdf Graphic file (type pdf)
-<use fig1.pdf>
-Package pdftex.def Info: fig1.pdf  used on input line 275.
-(pdftex.def)             Requested size: 246.0pt x 183.48763pt.
- [2 <./fig1.pdf>] [3]
-File: fig1.pdf Graphic file (type pdf)
-<use fig1.pdf>
-Package pdftex.def Info: fig1.pdf  used on input line 461.
-(pdftex.def)             Requested size: 170.71652pt x 127.33331pt.
- [4] [5] (TFG.end) [6] (TFG.aux
 
-Package natbib Warning: Citation `latex' multiply defined.
+Package natbib Warning: Citation `wmap' on page 2 undefined on input line 199.
 
 
-Package natbib Warning: Citation `footnotes' multiply defined.
+Package natbib Warning: Citation `weinberg' on page 2 undefined on input line 199.
 
 
-Package natbib Warning: Citation `jackson' multiply defined.
+LaTeX Warning: Reference `tab:sample1' on page 2 undefined on input line 260.
 
 
-Package natbib Warning: Citation `wmap' multiply defined.
+LaTeX Warning: Reference `fig:sample' on page 2 undefined on input line 278.
 
 
-Package natbib Warning: Citation `weinberg' multiply defined.
+LaTeX Warning: File `fig1.pdf' not found on input line 284.
 
 
-Package natbib Warning: Citation `endnote6' multiply defined.
+/Users/codefrom0/Documents/final_thesis/TFG.tex:284: Package pdftex.def Error: File `fig1.pdf' not found: using draft setting.
 
-)
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.284 ...udegraphics[width=\columnwidth]{fig1.pdf}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 330.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[3]
+
+LaTeX Warning: File `fig1.pdf' not found on input line 470.
+
+
+/Users/codefrom0/Documents/final_thesis/TFG.tex:470: Package pdftex.def Error: File `fig1.pdf' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.470 \includegraphics[width=6.0cm]{fig1.pdf}
+                                             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[4] [5]
+
+LaTeX Warning: Reference `LastBibItem' on page 6 undefined on input line 594.
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 596--598
+ \OT1/cmr/m/sl/9 Doc-u-ment Prepa-ra-tion for Be-gin-ners and Ad-vanced
+ []
+
+(TFG.end) [6] (TFG.aux)
+
+LaTeX Warning: There were undefined references.
+
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
 
-
  ) 
 Here is how much of TeX's memory you used:
- 3978 strings out of 478583
- 59271 string characters out of 2833995
- 455740 words of memory out of 3000000
- 22131 multiletter control sequences out of 15000+600000
- 479969 words of font info for 69 fonts, out of 8000000 for 9000
+ 4019 strings out of 478583
+ 59856 string characters out of 2833995
+ 453394 words of memory out of 3000000
+ 22157 multiletter control sequences out of 15000+600000
+ 480473 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,62p,222b,372s stack positions out of 10000i,1000n,20000p,200000b,80000s
- </Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/lj
-four/jknappen/ec/dpi600/tcrm1000.pk></Users/codefrom0/Library/Application Suppo
-rt/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/code
-from0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/
-install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Users/codefrom0/Library/Appl
-ication Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type
-1/public/amsfonts/cm/cmmi10.pfb></Users/codefrom0/Library/Application Support/M
-iKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/codefrom
-0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts
-/cm/cmmi7.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/insta
-ll/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Users/codefrom0/Library/Applicati
-on Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Use
-rs/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publ
-ic/amsfonts/cm/cmr12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/t
-exmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Users/codefrom0/Library
-/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.
-pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb></Users/codefrom0/Library/Application Support/
-MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/codefrom0
-/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/
-cm/cmsl8.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/instal
-l/fonts/type1/public/amsfonts/cm/cmsl9.pfb></Users/codefrom0/Library/Applicatio
-n Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Use
-rs/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/publ
-ic/amsfonts/cm/cmsy7.pfb></Users/codefrom0/Library/Application Support/MiKTeX/t
-exmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Users/codefrom0/Librar
-y/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti
-10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/font
-s/type1/public/amsfonts/cm/cmti9.pfb></Users/codefrom0/Library/Application Supp
-ort/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb></Users/cod
-efrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/ams
-fonts/symbols/msbm10.pfb>
-Output written on TFG.pdf (6 pages, 304617 bytes).
+ 55i,12n,62p,260b,318s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ </Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk> </Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl8.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on TFG.pdf (6 pages, 314132 bytes).
 PDF statistics:
- 146 PDF objects out of 1000 (max. 8388607)
+ 156 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
