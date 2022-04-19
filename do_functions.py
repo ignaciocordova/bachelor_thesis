@@ -30,17 +30,20 @@ def clean_dataframe(df):
 	df = df.drop(df[df.dphi_0010 == -999.0].index)
 	df = df.drop(df[df.meanP_2 < 0.0].index)
 	df = df.drop(df[df.precipBelow12 < 0.0].index)
+	df = df.drop(df[df.height_flag_comb < 0.0].index)
 
 	#Make the values of hxxx below height_flag_comb Nan
-	#values = df.loc[:,'h001':'h400'].to_numpy()
-	#flag = df.loc[:,'height_flag_comb'].to_numpy()
-	#for el in flag:
-		#index = int(el)
-		#values[:,0:index] = np.nan
-	
-	#df.loc[:,'h001':'h400'] = pd.DataFrame(values)
+	values = df.loc[:,'h001':'h400'].to_numpy()
+	flag = df.loc[:,'height_flag_comb'].to_numpy()
+	col = df.loc[:,'h001':'h400'].columns
 
-	return df 
+	i=0
+	for el in flag:
+		index = int(10.0*el)
+		values[i,:index] = np.nan
+		i = i+1 
+	df.loc[:,'h001':'h400'] = pd.DataFrame(values,columns = col).to_numpy()
+	return df
 
 def plot_profile(df,roid):
 	""" Plots the vertical profile of measure 'roid'
@@ -54,6 +57,18 @@ def plot_profile(df,roid):
 	plt.xlabel('Height')
 	plt.ylabel('Δɸ')
 	plt.show()
+
+def get_profile(df,i):
+	""" Returns the vertical profile of measure 'roid'
+	
+	Input: datafram and index i 
+	Output: array with Δɸ for each height
+	"""
+
+	x = df.iloc[i,10:].to_numpy()
+
+	return x
+
     
 
 def average_dphi(dfin,hi,hf,dfout):

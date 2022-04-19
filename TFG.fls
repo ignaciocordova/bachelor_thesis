@@ -277,10 +277,16 @@ INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/t
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmti10.tfm
-INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm0900.tfm
-OUTPUT TFG.pdf
-INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmbx10.tfm
+INPUT ./vprofile.png
+INPUT ./vprofile.png
+INPUT vprofile.png
+INPUT ./vprofile.png
+OUTPUT TFG.pdf
+INPUT ./vprofile.png
+INPUT ./vprofile.png
+INPUT ./vprofile.png
+INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map
 OUTPUT TFG.end
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/cm/cmtt9.tfm
@@ -294,8 +300,6 @@ INPUT TFG.end
 INPUT TFG.aux
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk
-INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk
-INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb
@@ -308,8 +312,6 @@ INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/t
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb
-INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb
-INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb

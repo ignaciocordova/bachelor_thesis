@@ -1,11 +1,9 @@
 # Fdb version 3
-["pdflatex"] 1649971686 "/Users/codefrom0/Documents/final_thesis/TFG.tex" "TFG.pdf" "TFG" 1649971686
-  "/Users/codefrom0/Documents/final_thesis/TFG.tex" 1649971680 31401 65263c8ce8e5822e4ccb2258bbe925c6 ""
+["pdflatex"] 1650298995 "/Users/codefrom0/Documents/final_thesis/TFG.tex" "TFG.pdf" "TFG" 1650298995
+  "/Users/codefrom0/Documents/final_thesis/TFG.tex" 1650298990 30988 851a57ba5912990080496e408624625a ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map" 1649954116 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
-  "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0900.pk" 1649971521 10472 736f97021be59139b043bd542dffaaae ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1649064576 11548 8c00df7d293507aa02c7325137db3781 ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1649064546 10257354 d106dd5567c6eb8a131c595b8e19273c ""
-  "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm0900.tfm" 1649061499 1444 b1efc6b76338296f8076c1701e4660f3 ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1649061499 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1649061485 1004 54797486969f23fa377b128694d548df ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1649061485 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -44,7 +42,6 @@
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1649061485 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1649061485 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1649061485 36741 fa121aac0049305630cf160b86157ee4 ""
-  "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1649061485 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1649061485 36281 c355509802a035cadc5f15869451dcee ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1649061485 36094 798f80770b3b148ceedd006d487db67c ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1649061485 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -89,10 +86,11 @@
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/revtex4/revsymb.sty" 1649064320 5122 56d8b1f9142915c5b1d50f236325646a ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/revtex4/revtex4.cls" 1649064320 154141 be890e20ddf8093cfe23bccccaf16c5f ""
   "/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/tex/latex/url/url.sty" 1649061520 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
-  "TFG.aux" 1649971686 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "TFG.aux" 1650298995 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "TFG.end" 0 -1 0 "pdflatex"
-  "TFG.tex" 1649971680 31401 65263c8ce8e5822e4ccb2258bbe925c6 ""
+  "TFG.tex" 1650298990 30988 851a57ba5912990080496e408624625a ""
   "fig1.pdf" 0 -1 0 ""
+  "vprofile.png" 1650055255 34794 372982415424fe472323ed92278101a8 ""
   (generated)
   "TFG.aux"
   "TFG.end"
