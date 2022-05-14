@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.4.4)  18 APR 2022 18:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.1) (preloaded format=pdflatex 2022.4.4)  28 APR 2022 18:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -240,69 +240,74 @@ Class revtex4 Warning: Assuming \noaffiliation for Advisor: Dr. Ramon Padull^^c3
 File: vprofile.png Graphic file (type png)
 <use vprofile.png>
 Package pdftex.def Info: vprofile.png  used on input line 135.
-(pdftex.def)             Requested size: 149.35915pt x 236.08382pt.
+(pdftex.def)             Requested size: 99.57024pt x 157.38521pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<map.png, id=3, 1445.4pt x 902.37125pt>
+File: map.png Graphic file (type png)
+<use map.png>
+Package pdftex.def Info: map.png  used on input line 150.
+(pdftex.def)             Requested size: 289.07487pt x 180.47105pt.
+
+Overfull \hbox (43.07487pt too wide) in paragraph at lines 150--151
+ [][] 
+ []
+
+/Users/codefrom0/Documents/final_thesis/TFG.tex:151: Missing $ inserted.
+<inserted text> 
+                $
+l.151 ...m PROs averaging between {h_o} and {h_f}}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/codefrom0/Documents/final_thesis/TFG.tex:151: Extra }, or forgotten $.
+<argument> ...re of m PROs averaging between {h_o}
+                                                   and {h_f}
+l.151 ...m PROs averaging between {h_o} and {h_f}}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/Users/codefrom0/Documents/final_thesis/TFG.tex:151: Missing $ inserted.
+<inserted text> 
+                $
+l.151 ...m PROs averaging between {h_o} and {h_f}}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/codefrom0/Documents/final_thesis/TFG.tex:151: Missing } inserted.
+<inserted text> 
+                }
+l.151 ...m PROs averaging between {h_o} and {h_f}}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 [1{/Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/map/pdftex/pdftex.map}]
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 150.
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 154.
+
+[2 <./vprofile.png> <./map.png>]
+
+LaTeX Warning: File `fig1.pdf' not found on input line 327.
 
 
-Package natbib Warning: Citation `jackson' on page 2 undefined on input line 161.
-
-
-Package natbib Warning: Citation `endnote1' on page 2 undefined on input line 168.
-
-\@endnoteout=\write3
-\openout3 = `TFG.end'.
-
-
-Package natbib Warning: Citation `wmap' on page 2 undefined on input line 192.
-
-
-Package natbib Warning: Citation `weinberg' on page 2 undefined on input line 192.
-
-
-LaTeX Warning: Reference `tab:sample1' on page 2 undefined on input line 253.
-
-
-LaTeX Warning: Reference `fig:sample' on page 2 undefined on input line 271.
-
-
-LaTeX Warning: File `fig1.pdf' not found on input line 277.
-
-
-/Users/codefrom0/Documents/final_thesis/TFG.tex:277: Package pdftex.def Error: File `fig1.pdf' not found: using draft setting.
+/Users/codefrom0/Documents/final_thesis/TFG.tex:327: Package pdftex.def Error: File `fig1.pdf' not found: using draft setting.
 
 See the pdftex.def package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.277 ...udegraphics[width=\columnwidth]{fig1.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2 <./vprofile.png>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 323.
-
-[3]
-
-LaTeX Warning: File `fig1.pdf' not found on input line 463.
-
-
-/Users/codefrom0/Documents/final_thesis/TFG.tex:463: Package pdftex.def Error: File `fig1.pdf' not found: using draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.463 \includegraphics[width=6.0cm]{fig1.pdf}
+l.327 \includegraphics[width=6.0cm]{fig1.pdf}
                                              
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -310,20 +315,20 @@ If that doesn't work, type  X <return>  to quit.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[3]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 376.
+
 [4]
 
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix] on input line 512.
-
-[5]
-
-LaTeX Warning: Reference `LastBibItem' on page 6 undefined on input line 587.
+LaTeX Warning: Reference `LastBibItem' on page 5 undefined on input line 451.
 
 
-Underfull \hbox (badness 1043) in paragraph at lines 589--591
+Underfull \hbox (badness 1043) in paragraph at lines 453--455
  \OT1/cmr/m/sl/9 Doc-u-ment Prepa-ra-tion for Be-gin-ners and Ad-vanced
  []
 
-(TFG.end) [6] (TFG.aux)
+[5] (TFG.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -332,17 +337,17 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
 
  ) 
 Here is how much of TeX's memory you used:
- 4025 strings out of 478583
- 59957 string characters out of 2833995
- 457394 words of memory out of 3000000
- 22163 multiletter control sequences out of 15000+600000
- 480136 words of font info for 70 fonts, out of 8000000 for 9000
+ 4003 strings out of 478583
+ 59716 string characters out of 2833995
+ 453394 words of memory out of 3000000
+ 22144 multiletter control sequences out of 15000+600000
+ 479968 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,62p,260b,310s stack positions out of 10000i,1000n,20000p,200000b,80000s
- </Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl8.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on TFG.pdf (6 pages, 330682 bytes).
+ </Users/codefrom0/Library/Application Support/MiKTeX/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl8.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsl9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmti9.pfb></Users/codefrom0/Library/Application Support/MiKTeX/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on TFG.pdf (5 pages, 440494 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
+ 113 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

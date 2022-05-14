@@ -29,7 +29,7 @@ def read_and_merge(document1,document2):
 def clean_dataframe(df):
 	df = df.drop(df[df.dphi_0010 == -999.0].index)
 	df = df.drop(df[df.meanP_2 < 0.0].index)
-	df = df.drop(df[df.precipBelow12 < 0.0].index)
+	df = df.drop(df[df.precipBelow6 < 0.0].index)
 	df = df.drop(df[df.height_flag_comb < 0.0].index)
 
 	#Make the values of hxxx below height_flag_comb Nan
@@ -45,13 +45,31 @@ def clean_dataframe(df):
 	df.loc[:,'h001':'h400'] = pd.DataFrame(values,columns = col).to_numpy()
 	return df
 
+#function that separates the dataframe into two dataframes based on region
+def separate_by_region(df):
+	""" Separates the dataframe into two dataframes based on region
+		and returns the two dataframes"""
+	land_df = df[df['region']==0]
+	sea_df = df[df['region']!=0]
+
+	return land_df,sea_df
+
+def separate_tropics(df):
+	""" Separates the dataframe into two dataframes based on region
+		and returns the two dataframes"""
+	extratropics_df = df[(df['region']==1) | ((df['region']==0)&(abs(df['lat'])>30)) ]
+	tropics_df = df.drop(df[(df['region']==1) | ((df['region']==0)&((df['lat']>30)|(df['lat']<-30) )) ].index)
+	return tropics_df,extratropics_df
+		
+	
+
 def plot_profile(df,roid):
 	""" Plots the vertical profile of measure 'roid'
 	
 	Input: roid
 	Output: just displays a plot 
 	"""
-	df.loc[df['roid']==roid].iloc[0,10:].plot()
+	df.loc[df['roid']==roid].iloc[0,12:].plot()
 
 
 	plt.xlabel('Height')
@@ -65,7 +83,7 @@ def get_profile(df,i):
 	Output: array with Δɸ for each height
 	"""
 
-	x = df.iloc[i,10:].to_numpy()
+	x = df.iloc[i,12:].to_numpy()
 
 	return x
 
@@ -137,7 +155,7 @@ def average(dfin,hi,hf):
 	# writes the calculated average for each measure
 	result = pd.DataFrame()
 	result['avg'+str1+''+str2] = df2.mean(axis=1)
-	result['precipBelow12'] = dfin['precipBelow12'].copy()
+	result['precipBelow6'] = dfin['precipBelow6'].copy()
 	result[result['avg'+str1+''+str2] < 0.0] = 0.
 	
 
@@ -196,14 +214,18 @@ def plotPrecisionRecall(df,hi,hf,percentile):
 	str1 = 'h'+str(int(hi*10)).zfill(3)
 	str2 = 'h'+str(int(hf*10)).zfill(3)
 
-	#build numpy array with normalized averages (there are negative values!)
+	#Eliminates measures with high dphi and low precipitation
+	#df_avg = df_avg.drop(df_avg[(df_avg['avg'+str1+''+str2] >0.7) & (df_avg['precipBelow6']<0.7)].index)
+
+
+	#build numpy array with normalized averages
 	probs = (df_avg['avg'+str1+''+str2]/df_avg['avg'+str1+''+str2].max()).to_numpy()
 
 	#Build boolean Truth array with True above percentile 
 	#the percentile ignores 0 values  
-	auxiliary_df = df_avg[df_avg['precipBelow12']>0]
-	truth_th = auxiliary_df['precipBelow12'].quantile(percentile)
-	truth = (df_avg['precipBelow12']>truth_th).to_numpy()
+	auxiliary_df = df_avg[df_avg['precipBelow6']>0]
+	truth_th = auxiliary_df['precipBelow6'].quantile(percentile)
+	truth = (df_avg['precipBelow6']>truth_th).to_numpy()
 
 	# calculate precision and recall curve
 	precision, recall, thresholds = precision_recall_curve(truth, probs)
@@ -256,14 +278,18 @@ def getF1score(df,hi,hf,percentile):
 	str1 = 'h'+str(int(hi*10)).zfill(3)
 	str2 = 'h'+str(int(hf*10)).zfill(3)
 
+	#Eliminates measures with high dphi and low precipitation
+	#df_avg = df_avg.drop(df_avg[(df_avg['avg'+str1+''+str2] >0.7) & (df_avg['precipBelow6']<0.7)].index)
+
+
 	#build numpy array with normalized averages (there are negative values!)
 	probs = (df_avg['avg'+str1+''+str2]/df_avg['avg'+str1+''+str2].max()).to_numpy()
 
 	#Build boolean Truth array with True above percentile 
 	#the percentile ignores 0 values  
-	auxiliary_df = df_avg[df_avg['precipBelow12']>0]
-	truth_th = auxiliary_df['precipBelow12'].quantile(percentile)
-	truth = (df_avg['precipBelow12']>truth_th).to_numpy()
+	auxiliary_df = df_avg[df_avg['precipBelow6']>0]
+	truth_th = auxiliary_df['precipBelow6'].quantile(percentile)
+	truth = (df_avg['precipBelow6']>truth_th).to_numpy()
 
 	# calculate precision and recall curve
 	precision, recall, thresholds = precision_recall_curve(truth, probs)
@@ -291,14 +317,18 @@ def getPrecisionRecall(df,hi,hf,percentile):
 	str1 = 'h'+str(int(hi*10)).zfill(3)
 	str2 = 'h'+str(int(hf*10)).zfill(3)
 
+	#Eliminates measures with high dphi and low precipitation
+	#df_avg = df_avg.drop(df_avg[(df_avg['avg'+str1+''+str2] >0.7) & (df_avg['precipBelow6']<0.7)].index)
+
+
 	#build numpy array with normalized averages (there are negative values!)
 	probs = (df_avg['avg'+str1+''+str2]/df_avg['avg'+str1+''+str2].max()).to_numpy()
 
 	#Build boolean Truth array with True above percentile 
 	#the percentile ignores 0 values  
-	auxiliary_df = df_avg[df_avg['precipBelow12']>0]
-	truth_th = auxiliary_df['precipBelow12'].quantile(percentile)
-	truth = (df_avg['precipBelow12']>truth_th).to_numpy()
+	auxiliary_df = df_avg[df_avg['precipBelow6']>0]
+	truth_th = auxiliary_df['precipBelow6'].quantile(percentile)
+	truth = (df_avg['precipBelow6']>truth_th).to_numpy()
 
 	# calculate precision and recall curve
 	precision, recall, thresholds = precision_recall_curve(truth, probs)
