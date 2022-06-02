@@ -329,7 +329,7 @@ def getF1score(df,hi,hf,percentile):
 	# calculate precision and recall curve
 	precision, recall, thresholds = precision_recall_curve(truth, probs)
 
-	#the optima threshold based on the largest F1 SCORE 
+	#the optimal threshold based on the largest F1 SCORE 
 	f1_scores = (2.0*precision*recall)/(precision+recall)
 	i = np.nanargmax(f1_scores)
 	
