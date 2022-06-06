@@ -133,8 +133,8 @@ def average_dphi(dfin,hi,hf,dfout):
 	df2= dfin.iloc[:,indx1:indx2+1] #only the columns to average
 
 	########Important condition########
-	#If NaN values are more than 20%, converts the whole row to NaN
-	df2.loc[df2.isna().sum(axis=1) > len(df2.columns)/5, :] = np.nan
+	#If NaN values are more than 33%, converts the whole row to NaN
+	df2.loc[df2.isna().sum(axis=1) > len(df2.columns)/3.0, :] = np.nan
 
 	# writes the calculated average for each measure 
 	# Note that dfout is not modified but a new dataframe is created
@@ -170,8 +170,8 @@ def average(dfin,hi,hf):
 	df2= dfin.iloc[:,indx1:indx2+1] #only the columns to average
 
 	########Important condition########
-	#If NaN values are more than 20%, converts the whole row to NaN
-	df2.loc[df2.isna().sum(axis=1) > len(df2.columns)/5, :] = np.nan
+	#If NaN values are more than 33%, converts the whole row to NaN
+	df2.loc[df2.isna().sum(axis=1) > len(df2.columns)/3.0, :] = np.nan
 	
 	# the results go into a new df
 	result = pd.DataFrame()
