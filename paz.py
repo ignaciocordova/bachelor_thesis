@@ -1,12 +1,26 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-
-import do_functions as do 
-
+import paz
 from sklearn.metrics import roc_curve
 from sklearn.metrics import precision_recall_curve
 
+
+"""
+############################################################
+# 															#
+
+The PAZ Python module was developed by Ignacio Cordova Pou during
+2022 for his final thesis at the Universitat de Barcelona.
+The module is used for the paper: "Performance Evaluation of
+Polarimetric Radio Occultations Measurements in Detecting 
+Precipitation" and contains funtions to work with the data 
+gathered in the ROHP-PAZ mission. To acces the data please
+contact ICE-CSIC at https://www.ice.csic.es/ . 
+
+# 																#
+###############################################################
+ """
 
 
 def read_and_merge(document1,document2):
@@ -197,8 +211,8 @@ def plotROC(df,hi,hf,percentile):
 	Output: none, displays a plot
 	"""
 
-	df_avg = do.average(df,hi,hf)
-	# do.average returns datafram with 2 columns: precipBelow12 
+	df_avg = paz.average(df,hi,hf)
+	# paz.average returns datafram with 2 columns: precipBelow6 
 	# and avg, they have the same length. 
 
 	# if hf<hi don't bother
@@ -213,9 +227,9 @@ def plotROC(df,hi,hf,percentile):
 	probs = (df_avg['avg'+str1+''+str2]/df_avg['avg'+str1+''+str2].max()).to_numpy()
 
 	#Build boolean Truth array with True for precipitation above percentile  
-	auxiliary_df = df_avg[df_avg['precipBelow12']>0] #the percentile ignores 0 values 
-	truth_th = auxiliary_df['precipBelow12'].quantile(percentile) #sets the truth threshold
-	truth = (df_avg['precipBelow12']>truth_th).to_numpy() #binary target numpy array
+	auxiliary_df = df_avg[df_avg['precipBelow6']>0] #the percentile ignores 0 values 
+	truth_th = auxiliary_df['precipBelow6'].quantile(percentile) #sets the truth threshold
+	truth = (df_avg['precipBelow6']>truth_th).to_numpy() #binary target numpy array
 
 	#ROC curves: fpr = false positive rate ; tpr = true positives rate 
 	fpr, tpr, _ = roc_curve(truth, probs)
@@ -237,8 +251,8 @@ def plotPrecisionRecall(df,hi,hf,percentile):
 	Output: none, displays a plot
 	"""
 
-	df_avg = do.average(df,hi,hf)
-	# do.average returns datafram with 2 columns: precipBelow12 
+	df_avg = paz.average(df,hi,hf)
+	# paz.average returns datafram with 2 columns: precipBelow6 
 	# and avg, they have the same length.
 
 	# if hf<hi don't bother
@@ -301,8 +315,8 @@ def getF1score(df,hi,hf,percentile):
 	Output: list with [hi, hf, truth_th, avg_dphi th, best F1Score]
 	"""
 
-	df_avg = do.average(df,hi,hf)
-	# do.average returns datafram with 2 columns: precipBelow12 
+	df_avg = paz.average(df,hi,hf)
+	# paz.average returns datafram with 2 columns: precipBelow6 
 	# and avg, they have the same length.
 
 	# if hf<hi don't bother
@@ -346,8 +360,8 @@ def getPrecisionRecall(df,hi,hf,percentile):
 	best recall, array of truths and a label (string) to identify the result
 	"""
 
-	df_avg = do.average(df,hi,hf)
-	# do.average returns datafram with 2 columns: precipBelow12 
+	df_avg = paz.average(df,hi,hf)
+	# paz.average returns datafram with 2 columns: precipBelow6 
 	# and avg, they have the same length.
 
 	# if hf<hi don't bother
