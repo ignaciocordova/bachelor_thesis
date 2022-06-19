@@ -8,7 +8,6 @@ from sklearn.metrics import precision_recall_curve
 
 """
 ############################################################
-# 															#
 
 The PAZ Python module was developed by Ignacio Cordova Pou during
 2022 for his final thesis at the Universitat de Barcelona.
@@ -18,7 +17,6 @@ Precipitation" and contains funtions to work with the data
 gathered in the ROHP-PAZ mission. To acces the data please
 contact ICE-CSIC at https://www.ice.csic.es/ . 
 
-# 																#
 ###############################################################
  """
 
