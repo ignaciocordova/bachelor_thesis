@@ -116,6 +116,18 @@ def get_profile(df,i):
 
 	return v_profile
 
+def get_profile_from_roid(df,roid):
+	""" Returns the vertical profile of a PRO. The measure is identified by 
+	the ROID. It returns a numpy array with the vertical profile. 
+	
+	Input: datafram and roid 
+	Output: numpy array with Δɸ for each height
+	"""
+
+	v_profile = df.loc[df['roid']==roid].iloc[0,12:].to_numpy()
+
+	return v_profile
+
     
 
 def average_dphi(dfin,hi,hf,dfout):
